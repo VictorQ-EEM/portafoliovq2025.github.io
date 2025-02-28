@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Portafolio de Victor Quevedo, diseñador gráfico profesional.">
+    <meta property="og:image" content="ruta/de/tu/imagen.png">
+    <meta property="og:description" content="Portafolio de Victor Quevedo, diseñador gráfico profesional.">
+    <meta property="og:title" content="Mi Portafolio">
+    <meta property="og:url" content="https://tu-sitio-web.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TuUsuario">
+    <meta name="twitter:creator" content="@TuUsuario">
+    <link rel="shortcut icon" href="ruta/de/tu/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Portafolio</h1>
+            <h3 class="subtitle">Victor Quevedo</h3>
+            <p class="description">Hola, soy un diseñador gráfico profesional apasionado por crear experiencias digitales increíbles.</p>
+        </div>
+        <div class="header-buttons">
+            <button id="toggle-theme">Cambiar a tema claro</button>
+            <a href="https://wa.me/6151092932?text=Hola,%20me%20gustaría%20contratar%20sus%20servicios." target="_blank" id="whatsapp-button">Contratar servicio</a>
+        </div>
+    </header>
+
+    <section id="proyectos">
+        <div class="proyecto">
+            <h3>D'luxe Shop</h3>
+            <p>Boutique</p>
+            <img src="imagenes/proyecto1.jpg" alt="D'luxe Shop" onclick="abrirImagen(this)">
+        </div>
+        <div class="proyecto">
+            <h3>Glam Goddess</h3>
+            <p>Make-up Artist</p>
+            <img src="imagenes/proyecto2.jpg" alt="Glam Goddess" onclick="abrirImagen(this)">
+        </div>
+        <div class="proyecto">
+            <h3>Studio K Nails</h3>
+            <p>Manicurista profesional</p>
+            <img src="imagenes/proyecto3.jpg" alt="Studio K Nails" onclick="abrirImagen(this)">
+        </div>
+        <div class="proyecto">
+            <h3>Brava Glow</h3>
+            <p>Beauty Salon</p>
+            <img src="imagenes/proyecto4.jpg" alt="Brava Glow" onclick="abrirImagen(this)">
+        </div>
+    </section>
+
+    <div class="contacto">
+        <h3>Contacto</h3>
+        <p>Si deseas contactarme a través del siguiente email: <a href="mailto:victorqrz03@gmail.com" class="email-link">victorqrz03@gmail.com</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img id="modalImg" class="modal-content" alt="Imagen ampliada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
